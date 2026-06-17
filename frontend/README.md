@@ -14,3 +14,101 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Running the Project Locally
+
+### Prerequisites
+
+* Python 3.x
+* Node.js and npm
+* Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Gauthamkrishn2k4/EventRegistrationPlatform-.git
+cd EventRegistrationPlatform
+```
+
+### Backend Setup (Django)
+
+```bash
+cd backend
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run database migrations:
+
+```bash
+python manage.py migrate
+```
+
+Start the Django server:
+
+```bash
+python manage.py runserver
+```
+
+The backend will run at:
+
+```text
+http://127.0.0.1:8000/
+```
+
+### Frontend Setup (React)
+
+Open a new terminal:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The frontend will run at:
+
+```text
+http://localhost:5173/
+```
+
+### Application Features
+
+* User Registration
+* User Login
+* Event Listing
+* Event Registration
+* React Frontend
+* Django REST API Backend
+* SQLite Database Integration
+
+### Notes
+
+Ensure that both the frontend and backend servers are running simultaneously for the application to function correctly.
+
